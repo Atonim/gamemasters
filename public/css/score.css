@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  font-family: 'Press Start 2P', cursive;
+  color: aliceblue;
+}
+
+button {
+  width: 100%;
+  height: 25px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  border: 4px white solid;
+  padding: 15px;
+}
+
+
+.scoreLine {
+  padding: 15px;
+  max-width: 500px;
+  overflow: hidden;
+  /*display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;*/
+  display: grid;
+  grid-template-columns: auto auto minmax(10px, 1fr) auto;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  justify-content: stretch;
+}
+
+.score {
+
+  /*align-content: right;*/
+  text-align: right;
+  justify-self: right;
+}
+
+.name {
+  text-align: left;
+  justify-self: left;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+}
+
+button {
+  margin: 5px auto;
+}
+
+.dots {
+  min-width: 0px;
+}
+
+.dots:after {
+  /*content: '.........................';*/
+  /*display: block;*/
+  white-space: nowrap;
+  overflow: hidden;
+
+}
